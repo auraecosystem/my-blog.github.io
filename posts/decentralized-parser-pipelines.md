@@ -287,7 +287,7 @@ impl<'a> ZeroCopyLexer<'a> {
 
 ---
 
-## 4. Abstract Syntax Tree (AST) Construction
+### 4. Abstract Syntax Tree (AST) Construction
 
 Once tokenized, the stream is parsed into a hierarchical AST. Below is a recursive-descent parser written in JavaScript that builds typed node representations.
 
@@ -657,7 +657,7 @@ By moving from unconstrained text-based parsing to a tightly controlled Rust/WAS
 * **Incremental AST Parsing:** Cache binary AST blocks to allow partial re-parsing upon delta updates.
 * **Cryptographic AST Hashing:** Compute Merkle root hashes directly over binary AST byte buffers for instant integrity verification.
 """
-
+```
 filename = "building_high_performance_parser_pipelines_web4.md"
 with open(filename, "w", encoding="utf-8") as f:
 f.write(content)
@@ -672,7 +672,7 @@ File saved successfully as building_high_performance_parser_pipelines_web4.md
 
 ```
 
-Your Markdown file is ready
+# Your Markdown file is ready
 
 
 Here is the complete content of the comprehensive Markdown guide:
@@ -1334,7 +1334,5 @@ By moving from unconstrained text-based parsing to a tightly controlled Rust/WAS
 * **SIMD Vectorization:** Parallelize token scanning using WebAssembly SIMD primitives.
 * **Incremental AST Parsing:** Cache binary AST blocks to allow partial re-parsing upon delta updates.
 * **Cryptographic AST Hashing:** Compute Merkle root hashes directly over binary AST byte buffers for instant integrity verification.
-
-```
 
 ```
