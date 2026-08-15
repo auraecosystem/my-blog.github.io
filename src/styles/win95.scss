@@ -1,0 +1,93 @@
+// ==========================================
+// Windows 95 Retro Theme
+// ==========================================
+
+// Color Palette Variables
+$w95-teal: #008080;
+$w95-silver: #c0c0c0;
+$w95-blue: #000080;
+$w95-border-light: #ffffff;
+$w95-border-dark: #808080;
+$w95-border-black: #000000;
+$w95-text: #000000;
+
+// Page Background & Font Override
+body {
+  background-color: $w95-teal !important;
+  font-family: "MS Sans Serif", "Microsoft Sans Serif", Tahoma, sans-serif !important;
+  color: $w95-text !important;
+}
+
+// 3D Beveled Panels (Windows, Cards, Modals, Sidebars)
+.window,
+.card,
+.modal,
+.sidebar,
+.panel,
+.box {
+  background-color: $w95-silver !important;
+  border-top: 2px solid $w95-border-light !important;
+  border-left: 2px solid $w95-border-light !important;
+  border-right: 2px solid $w95-border-dark !important;
+  border-bottom: 2px solid $w95-border-dark !important;
+  box-shadow: 1px 1px 0px $w95-border-black;
+  border-radius: 0 !important;
+  color: $w95-text !important;
+  padding: 8px;
+}
+
+// Classic Active Blue Title Bar
+.title-bar,
+.window-header,
+.panel-header {
+  background: linear-gradient(90deg, $w95-blue, #1084d0) !important;
+  color: #ffffff !important;
+  font-weight: bold;
+  padding: 4px 8px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// 3D Outset Action Buttons
+button,
+.btn,
+.button {
+  background-color: $w95-silver !important;
+  color: $w95-text !important;
+  border-top: 2px solid $w95-border-light !important;
+  border-left: 2px solid $w95-border-light !important;
+  border-right: 2px solid $w95-border-dark !important;
+  border-bottom: 2px solid $w95-border-dark !important;
+  box-shadow: 1px 1px 0px $w95-border-black;
+  border-radius: 0 !important;
+  padding: 4px 12px !important;
+  font-weight: bold;
+
+  // Pressed Inset State
+  &:active,
+  &.active {
+    border-top: 2px solid $w95-border-dark !important;
+    border-left: 2px solid $w95-border-dark !important;
+    border-right: 2px solid $w95-border-light !important;
+    border-bottom: 2px solid $w95-border-light !important;
+    box-shadow: none;
+    padding: 5px 11px 3px 13px !important;
+  }
+}
+
+// Inset Form Inputs
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+  background-color: #ffffff !important;
+  color: $w95-text !important;
+  border-top: 2px solid $w95-border-dark !important;
+  border-left: 2px solid $w95-border-dark !important;
+  border-right: 2px solid $w95-border-light !important;
+  border-bottom: 2px solid $w95-border-light !important;
+  border-radius: 0 !important;
+  padding: 4px 6px !important;
+}
