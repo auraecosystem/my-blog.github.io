@@ -66,9 +66,7 @@ This guide provides a end-to-end architectural walkthrough for building a zero-d
 ## 1. Architectural Pipeline Overview
 
 The compiler pipeline operates through four discrete, well-defined stages:
-
-
-```rst
+```antlr
 +------------------+     +-------------------+     +---------------------+     +----------------------+
 | Raw Source Code  | --> |  Lexical Analysis | --> | AST Construction    | --> | Binary Serialization |
 | (Text Stream)    |     |  (Token Stream)   |     | (Hierarchical Nodes)|     | (Lightweight Bytes)  |
