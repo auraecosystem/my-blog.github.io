@@ -12,6 +12,12 @@ git remote add origin https://github.com/auraecosystem/my-blog.github.io.git
 git remote set-url origin https://github.com/auraecosystem/my-blog.github.io.git
 git clone https://github.com/auraecosystem/my-blog.github.io.git
 cd my-blog.github.io
-git add .
+man git-add .
 git commit -m "Update blog content"
 git push -u origin main
+git add .github/workflows/deploy.yml
+git commit -m "ci: configure automated GitHub Pages deployment"
+git push origin main
+npm run dev   # or: hugo server / bundle exec jekyll serve
+# Serve static files locally
+npx serve .
