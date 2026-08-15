@@ -6,3 +6,4 @@ cd my-blog
 git init
 git add .
 git commit -m "feat: initialize blog repository setup"
+npm install gray-matter highlight.js marked
