@@ -1,0 +1,50 @@
+// ==========================================
+// Custom Flavour Extended Reset & Utilities
+// ==========================================
+
+@import 'app/javascript/styles/reset';
+
+// Custom Application Shell Wrapper
+#root,
+#app,
+.app-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+// Accessibility Focus States
+:focus-visible {
+  outline: 2px solid var(--accent-color, #2563eb);
+  outline-offset: 2px;
+}
+
+// Custom WebKit Scrollbar Styling
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track, #f1f5f9);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb, #cbd5e1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover, #94a3b8);
+}
+
+// Global Layout Helpers
+.scrollable {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.hidden {
+  display: none !important;
+}
