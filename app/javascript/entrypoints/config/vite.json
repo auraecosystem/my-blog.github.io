@@ -1,1 +1,17 @@
-
+{
+  "all": {
+    "sourceCodeDir": "app/javascript",
+    "watchAdditionalPaths": []
+  },
+  "development": {
+    "autoBuild": true,
+    "host": "localhost",
+    "port": 3036
+  },
+  "test": {
+    "autoBuild": true
+  },
+  "production": {
+    "autoBuild": false
+  }
+}
