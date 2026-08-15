@@ -10,3 +10,12 @@ Web4 architecture focuses on combining **decentralized web protocols**, autonomo
 
 ```javascript
 console.log("Web4 system online.");
+```
+---
+
+### 5. Run Your Vite Development Server
+
+Start the project using Vite:
+
+```bash
+npx vite
