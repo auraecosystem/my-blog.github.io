@@ -1,0 +1,49 @@
+// Glitch High-Contrast Neon Code Wrappers
+.code-block-wrapper {
+  background: #090d16;
+  border: 1px solid #1e293b;
+  border-left: 4px solid var(--accent-color, #6364ff);
+  border-radius: 6px;
+  margin: 20px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+
+  .code-header {
+    background: #0f172a;
+    padding: 6px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1e293b;
+    color: #94a3b8;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 12px;
+
+    .copy-btn {
+      background: #1e293b;
+      color: #f8fafc;
+      border-radius: 4px;
+      padding: 2px 8px;
+      font-size: 11px;
+      transition: background 0.2s ease;
+
+      &:hover {
+        background: #334155;
+      }
+    }
+  }
+
+  pre {
+    padding: 16px;
+    overflow-x: auto;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #e2e8f0;
+  }
+
+  .hljs-keyword { color: #ff0055; font-weight: bold; }
+  .hljs-string { color: #00ffcc; }
+  .hljs-comment { color: #475569; font-style: italic; }
+  .hljs-function { color: #3b82f6; }
+  .hljs-number { color: #f59e0b; }
+}
