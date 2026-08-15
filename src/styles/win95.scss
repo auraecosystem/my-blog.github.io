@@ -91,3 +91,42 @@ select {
   border-radius: 0 !important;
   padding: 4px 6px !important;
 }
+// Windows 95 Inset Code Blocks & Syntax Palette
+.code-block-wrapper {
+  background-color: #000000 !important;
+  border-top: 2px solid $w95-border-dark !important;
+  border-left: 2px solid $w95-border-dark !important;
+  border-right: 2px solid $w95-border-light !important;
+  border-bottom: 2px solid $w95-border-light !important;
+  margin: 16px 0;
+  font-family: "Courier New", Courier, monospace !important;
+
+  .code-header {
+    background-color: $w95-silver;
+    border-bottom: 1px solid $w95-border-dark;
+    padding: 2px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $w95-text;
+    font-weight: bold;
+
+    .copy-btn {
+      padding: 1px 6px;
+      font-size: 11px;
+    }
+  }
+
+  pre {
+    padding: 12px;
+    overflow-x: auto;
+    color: #00ff00; // Classic CRT Matrix Green Output
+  }
+
+  // Highlight.js Token Colors (Win95 CRT feel)
+  .hljs-keyword { color: #569cd6; font-weight: bold; }
+  .hljs-string { color: #ce9178; }
+  .hljs-comment { color: #6a9955; font-style: italic; }
+  .hljs-function { color: #dcdcaa; }
+  .hljs-number { color: #b5cea8; }
+}
