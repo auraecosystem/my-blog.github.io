@@ -68,8 +68,7 @@ This guide provides a end-to-end architectural walkthrough for building a zero-d
 The compiler pipeline operates through four discrete, well-defined stages:
 
 
-```
-
+```rst
 +------------------+     +-------------------+     +---------------------+     +----------------------+
 | Raw Source Code  | --> |  Lexical Analysis | --> | AST Construction    | --> | Binary Serialization |
 | (Text Stream)    |     |  (Token Stream)   |     | (Hierarchical Nodes)|     | (Lightweight Bytes)  |
@@ -80,7 +79,6 @@ v
 | WASM Execution Host  |
 | (Shared Memory)      |
 +----------------------+
-
 ```
 
 1. **Lexical Analysis (Lexing):** Converts source text into a linear stream of atomic, typed tokens while discarding non-semantic whitespace.
