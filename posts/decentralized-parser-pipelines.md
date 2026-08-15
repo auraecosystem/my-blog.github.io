@@ -1,4 +1,4 @@
-content = """---
+---
 title: "Building High-Performance Parser Pipelines in Web4"
 date: "2026-08-15"
 tags: ["compilers", "web4", "architecture", "rust", "wasm", "antlr"]
